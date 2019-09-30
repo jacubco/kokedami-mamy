@@ -1,0 +1,23 @@
+.hero {
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 70vh;
+  background-position: center;
+
+
+  &--home {
+    background-image: url('../img/hero_home_g.jpg');
+
+    @include respond(small) {
+      background-image: url('../img/hero_1200_g.jpg');
+    }
+  }
+
+  &--workshop {
+    background-image: url('../img/hero_shop_g.jpg');
+  }
+
+  &--contact {
+    background-image: url('../img/hero_contact_g.jpg');
+  }
+}

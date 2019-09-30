@@ -1,0 +1,32 @@
+html {
+  font-family: 'Montserrat', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: $color-text-primary;
+}
+
+.section {
+  line-height: 142%;
+  font-size: $font-size-default;
+  font-weight: 700;
+  letter-spacing: 2px; 
+  margin-bottom: -10rem;
+  z-index: 5000;
+}
+
+.section-about {
+  text-align: center;
+}
+
+.header-2 {
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.header-3 {
+  font-size: 3.2rem;
+  letter-spacing: 4px; 
+  margin-bottom: 2rem;
+
+
+}

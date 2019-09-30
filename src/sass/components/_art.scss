@@ -1,0 +1,72 @@
+.flower-pot {
+  z-index: 5; 
+  position: 
+  relative; 
+  height: 65vh; 
+  width: 100vw; 
+  box-sizing: content-box;
+
+  @include respond(medium) {
+    height: 45vh;
+  }
+}
+
+.art {
+  display: inline-block; 
+  position: absolute;
+  bottom: 0;
+  
+  &__kok1 {
+    height: 100%; 
+    left: 10rem; 
+
+    &--workshops,
+    &--contact {
+      display: none;
+    }
+  }
+
+  &__kok2 {
+    height: 50%; 
+    left: 10rem; 
+
+    &--home, 
+    &--contact {
+      display: none;
+    }
+  }
+
+  &__paro {
+    height: 80%;
+    left: 38rem; 
+    bottom: 0;
+
+    &--workshops,
+    &--contact {
+      display: none;
+    }
+
+    @include respond(medium) {
+      left: 29.5rem;
+    }
+  }
+
+  &__duz {
+    right: 0; 
+    bottom: 0;
+    height: 30%;
+  }
+
+  @include respond(small) {
+    &__kok1 {
+      left: 1rem;
+      height: 95%;
+      
+    }
+
+    &__paro,
+    &__duz {
+      display: none;
+    }
+  }
+}

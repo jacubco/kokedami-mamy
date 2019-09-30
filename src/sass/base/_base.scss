@@ -1,0 +1,55 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  background-position-y: 6px;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+
+  // possible svg background with fallback for older browsers
+  // background: url("fallback.png") no-repeat center;
+  // background-image: url('../img/bg_test.svg');
+  // background-size: contain;
+
+
+  // background-image: url('../img/background.jpg');
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 42;
+}
+
+p {
+  padding-bottom: 4vh;
+}
+
+
+// Form Inputs
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+// Change Autocomplete styles in Chrome
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  -webkit-text-fill-color: $color-text-primary;
+  -webkit-box-shadow: 0 0 0px 1000px $color-bg inset;
+  transition: background-color 5000s ease-in-out 0s;
+}

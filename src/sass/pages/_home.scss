@@ -1,0 +1,15 @@
+.wrapper {
+  background-image: url('../img/background_g.jpg');
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.section-about {
+  text-align: center;
+
+  @include respond(small) {
+    margin-bottom: -4vh;
+    font-size: 2rem;
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "name": "site-kokedami-mamy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "compile:sass": "node-sass src/sass/main.scss docs/css/styles.css -w"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "@fortawesome/fontawesome-free": "^5.10.2",
+    "browser-sync": "^2.26.7",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.0",
+    "gulp-clean-css": "^4.2.0",
+    "gulp-minify": "^3.1.0",
+    "gulp-nunjucks": "^5.0.0",
+    "gulp-rename": "^1.4.0",
+    "node-sass": "^4.12.0"
+  },
+  "browserslist": [
+    "last 2 versions",
+    "> 1%",
+    "IE 8"
+  ]
+}

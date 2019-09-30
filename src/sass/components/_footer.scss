@@ -1,0 +1,26 @@
+.flower-pot {
+  height: 30rem;
+  position: relative;
+  background: red;
+  display: inline-block;
+  width: 45%;
+}
+
+.art {
+  bottom: 0;
+
+  &--kok1 {
+    height: 100%;
+  }
+
+  &--paro {
+    height: 10%;
+
+  }
+
+  &--duz {
+    right: 0; 
+    bottom: 0;
+    height: 30rem;
+  }
+}

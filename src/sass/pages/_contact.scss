@@ -1,0 +1,8 @@
+.section--contact {
+  text-align: center;
+
+  @include respond(small) {
+    margin-bottom: -4vh;
+    font-size: 2rem;
+  }
+}

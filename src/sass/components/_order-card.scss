@@ -1,0 +1,102 @@
+//  <div class="order-card">
+//   <h3 class="order-card__header header-3">kokedamí workshop</h3>
+//   <form action="" class="order-card__form">
+//     <label for="price" class="order-card__price"></label>
+//     <input type="text" id="price" class="order-card__input order-card__input--price">
+//     <label for="price" class="order-card__amount"></label>
+//     <input type="text" id="amount" class="order-card__input order-card__input--amount">
+//     <button type="submit" class="order-card__submit"></button>
+//   </form>
+// </div> <!-- end order-card -->
+
+
+
+.order-card {
+  width: 80%;
+  float: right;
+  position: relative;
+  top: 8rem;
+
+  &__header {
+    float: left;
+  }
+
+  &__form {
+    float: right;
+    width: 100%;
+  }
+
+  &__price,
+  &__amount {
+    margin-bottom: .8rem;
+  }
+
+  &__price {
+    float: left;
+  }
+
+  &__amount {
+    float: left;
+    position: relative;
+    top: .6rem;
+  }
+
+  &__input, &__submit {
+    margin-bottom: 3.2rem;
+    float: right;
+    border: 4px solid $color-text-primary;
+  }
+
+  &__input {
+    background-color: transparent;
+    height: 4rem;
+    margin-bottom: 3.2rem;
+    float: right;
+    font-size: 2.2rem;
+    font-weight: 500;
+    color: $color-text-primary;
+    padding: 2rem 2rem;
+
+    &::placeholder {
+      color: $color-text-primary;
+      opacity: .7;
+    }
+
+    &:focus {
+      background-color: $color-text-primary;
+      color: $color-bg;
+    }
+
+    &--price {
+      width: 100%;
+      display: block;
+    }
+
+    &--amount {
+      width: 70%;
+    }
+  }
+
+  &__submit {
+    color: $color-text-secondary;
+    background-color: $color-text-primary;
+    width: 70%;
+    font-weight: 700;
+    font-size: $font-size-default;
+    letter-spacing: 4px;
+    padding: .4rem 0;
+    cursor: pointer;
+    transition: all .4s ease-in-out;
+
+    &:hover {
+      background-color: $color-text-primary;
+      box-shadow: 0 1rem 2rem rgba(0,0,0, 0.4);
+      transform: translateY(-3px);
+    }
+    
+    &:active {
+      box-shadow: 0 .5rem 1rem rgba(0,0,0, 0.4);
+      transform: translateY(0);
+    }
+  }
+}

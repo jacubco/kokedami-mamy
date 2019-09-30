@@ -1,0 +1,45 @@
+@charset 'UTF-8';
+
+// 1. Configuration and helpers
+@import
+  'abstracts/variables',
+  // 'abstracts/functions',
+  'abstracts/mixins';
+
+// 2. Vendors
+// @import
+//   'vendors/normalize';
+
+// 3. Base stuff
+@import
+  'base/animations',
+  'base/base',
+  'base/fonts',
+  'base/typography',
+  'base/helpers';
+
+// 4. Layout-related sections
+@import
+  'layout/grid';
+//   'layout/header',
+//   'layout/footer';
+
+// 5. Components
+@import
+  'components/art', // footer_old
+  'components/button',
+  // 'components/footer',
+  'components/hero',
+  'components/nav',
+  'components/order-card',
+  'components/social'; // footer_old
+
+// 6. Page-specific styles
+@import
+  'pages/contact',
+  'pages/home',
+  'pages/workshop';
+
+// 7. Themes
+// @import
+//   'themes/default';

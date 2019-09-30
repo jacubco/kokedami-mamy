@@ -1,0 +1,52 @@
+/*****************************
+******************************
+*** GRID**/
+/* This grid uses floats - because they work everywhere, even in older browsers*/
+.container {
+  padding: 10rem;
+
+  @include respond(small) {
+    padding: 5rem;
+  }
+}
+
+.row {
+  /*Grids are most commonly 1140px wide*/
+  max-width: 114rem;
+
+  /*Center grid*/
+  /*Works for all block elements which are nested in another block element*/
+  margin: 0 auto;
+}
+
+/*Define gutter*/
+.row:not(:last-child) {
+  margin-bottom: 8rem;
+}
+
+/*Set clearfix*/
+.row::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+  
+/*Set general column styles*/
+/*Use attribute selector to select all classes beginning with col*/
+[class^='col-'] {
+  float: left;
+}
+
+[class^='col-']:not(:last-child) {
+  margin-right: 6rem;
+}
+
+  
+/*Set widths for the different columns*/
+.col-1-of-2 {
+  width: calc((100% - 6rem) / 2);
+}
+
+.col-3-of-4 {
+    width: calc(3 * ((100% - 3 * 6rem) / 4) + (2 * 6rem));
+  }
