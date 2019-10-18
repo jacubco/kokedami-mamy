@@ -8,14 +8,13 @@
 
 
 // Media queries
-// Breakpoints correspond to bootstrap breakpoints
-@mixin respond($breakpoint) {
+@mixin media($breakpoint) {
   @if $breakpoint == x-small {
-    @media (max-width: 36rem) { @content }; // up to 576px
+    @media (max-width: 36rem) { @content };
   }
 
   @if $breakpoint == small {
-    @media (max-width: 48rem) { @content }; // up to 768px
+    @media (max-width: 48rem) { @content };
   }
 
   @if $breakpoint == small-medium {
@@ -23,10 +22,10 @@
   }
 
   @if $breakpoint == medium {
-    @media (max-width: 75rem) { @content }; // up to 1200px, e.g. landscape tablets
+    @media (max-width: 75rem) { @content };
   }
 
   @if $breakpoint == large {
-    @media (min-width: 112.5rem) { @content }; // 1800px, huge desktops
+    @media (min-width: 112.5rem) { @content };
   }
 }

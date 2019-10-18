@@ -8,8 +8,8 @@
   &--home {
     background-image: url('../img/hero_home_g.jpg');
 
-    @include respond(small) {
-      background-image: url('../img/hero_1200_g.jpg');
+    @include media(small) {
+      background-image: url('../img/hero_home_1200_g.jpg');
     }
   }
 

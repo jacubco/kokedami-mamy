@@ -3,9 +3,9 @@
   &:visited {
     text-decoration: none;
     color: $color-text-primary;
-    border: 4px solid $color-text-primary;
+    border: .4rem solid $color-text-primary;
     font-size: $font-size-default;
-    padding: 10px 40px;
+    padding: 1rem 4rem;
     display: inline-block;
     transition: all .4s ease-in-out;
     z-index: 5000;
@@ -14,7 +14,7 @@
   &:hover {
     background-color: $color-text-primary;
     box-shadow: 0 1rem 2rem rgba(0,0,0, 0.4);
-    transform: translateY(-3px);
+    transform: translateY(-.3rem);
   }
   
   &:active {

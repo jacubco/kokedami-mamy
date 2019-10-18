@@ -5,14 +5,23 @@
 .container {
   padding: 10rem;
 
-  @include respond(small) {
-    padding: 5rem;
+  @include media(small) {
+    padding: 5vw;
   }
 }
 
 .row {
   /*Grids are most commonly 1140px wide*/
   max-width: 114rem;
+
+  @include media(medium) {
+    max-width: 65rem;
+  }
+
+  @include media(small) {
+    margin: 5vw;
+    max-width: 85vw;
+  }
 
   /*Center grid*/
   /*Works for all block elements which are nested in another block element*/
@@ -35,6 +44,11 @@
 /*Use attribute selector to select all classes beginning with col*/
 [class^='col-'] {
   float: left;
+
+  @include media(medium) {
+    width: 100% !important;
+    margin-bottom: 2rem;
+  }
 }
 
 [class^='col-']:not(:last-child) {

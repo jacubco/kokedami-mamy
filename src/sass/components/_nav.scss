@@ -43,7 +43,7 @@
 
     &:hover {
       text-shadow: 0 1rem 2rem rgba(0,0,0, 0.4);
-      transform: translateY(-3px);
+      transform: translateY(-.3rem);
     }
   }
 
@@ -65,7 +65,7 @@
     }
   }
 
-  @include respond(medium) {
+  @include media(medium) {
     padding-bottom: 1rem;
 
     &__list &__link {
@@ -74,7 +74,7 @@
     }
   }
 
-  @include respond(small-medium) {
+  @include media(small-medium) {
 
     &__brand {
       padding-left: 2rem;
@@ -98,7 +98,7 @@
 
   }
 
-  @include respond(small) {
+  @include media(small) {
 
     &__brand {
       height: 16rem;

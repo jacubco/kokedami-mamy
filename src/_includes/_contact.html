@@ -11,7 +11,7 @@
 
 <div class="wrapper">
 <main>
-  <section id="about" class="container section section--contact">
+  <section id="contact" class="container section section--contact">
     <h2 class="header-2">kontakt</h2>
     <div class="row">
       
@@ -36,19 +36,10 @@
         Rybalkova 296/7<br>
       </p>
 
-      <a href="#" class="social__link">
-        <div class="social__btn social__btn--fb">
-          <i class="fa fa-facebook social__icon" aria-hidden="true"></i>
-        </div>
-      </a>
-      
-      <a href="#" class="social__link">
-        <div class="social__btn">
-          <i class="social__text fa fa-instagram social__icon" aria-hidden="true"></i>
-        </div>
-      </a>
+      <div class="social-container--contact">
+        {% include '_includes/_social_btns.html' %}
+      </div>
 
-      
     </div>
   </section>
 </main>

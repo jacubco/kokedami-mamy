@@ -9,6 +9,14 @@
 
 html {
   font-size: 62.5%;
+
+  @include media(medium) {
+    font-size: 60%;
+  }
+
+  @include media(small) {
+    font-size: 40%;
+  }
 }
 
 body {

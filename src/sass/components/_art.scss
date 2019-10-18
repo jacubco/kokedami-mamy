@@ -1,13 +1,12 @@
 .flower-pot {
   z-index: 5; 
-  position: 
-  relative; 
+  position: relative; 
   height: 65vh; 
   width: 100vw; 
   box-sizing: content-box;
 
-  @include respond(medium) {
-    height: 45vh;
+  @include media(medium) {
+    height: 50vh;
   }
 }
 
@@ -34,6 +33,14 @@
     &--contact {
       display: none;
     }
+
+    @include media(medium) {
+      height: 30%;
+    }
+
+    @include media(small) {
+      height: 40%;
+    }
   }
 
   &__paro {
@@ -46,7 +53,7 @@
       display: none;
     }
 
-    @include respond(medium) {
+    @include media(medium) {
       left: 29.5rem;
     }
   }
@@ -57,7 +64,7 @@
     height: 30%;
   }
 
-  @include respond(small) {
+  @include media(small) {
     &__kok1 {
       left: 1rem;
       height: 95%;
