@@ -541,15 +541,15 @@ html {
 
 .section--contact {
   text-align: center;
-  margin-bottom: -50rem; }
+  margin-bottom: -25rem; }
   @media (max-width: 75rem) {
     .section--contact {
       font-size: 2rem;
-      margin-bottom: -35rem; } }
+      margin-bottom: -15rem; } }
   @media (max-width: 48rem) {
     .section--contact {
       font-size: 2rem;
-      margin-bottom: -25rem; } }
+      margin-bottom: -10rem; } }
 
 .wrapper {
   background-image: url("../img/background_g.jpg");
