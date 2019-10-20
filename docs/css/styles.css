@@ -330,7 +330,7 @@ html {
       top: 2rem;
       right: 2rem;
       z-index: -100;
-      padding: 12px 42px;
+      padding: 1.2rem 4.2rem;
       transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1);
       background: #E7E0D0;
       opacity: .6; }
@@ -342,7 +342,7 @@ html {
       right: 2rem;
       box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3);
       text-align: center;
-      padding: 10px 40px;
+      padding: 1rem 3.8rem;
       z-index: 20;
       border: 2px solid #007229; }
     .nav__icon {
