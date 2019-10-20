@@ -3,7 +3,7 @@
 *** GRID**/
 /* This grid uses floats - because they work everywhere, even in older browsers*/
 .container {
-  padding: 10rem;
+  padding: 20rem;
 
   @include media(small) {
     padding: 5vw;

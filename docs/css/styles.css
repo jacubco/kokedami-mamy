@@ -81,13 +81,22 @@ html {
   font-size: 3.2rem;
   letter-spacing: 4px;
   margin-bottom: 2rem; }
+  @media (max-width: 1375px) {
+    .header-3 {
+      font-size: 2.8rem; } }
+  @media (max-width: 1375px) {
+    .header-3 {
+      font-size: 2.4rem; } }
+  @media (max-width: 75rem) {
+    .header-3 {
+      font-size: 3.2rem; } }
 
 /*****************************
 ******************************
 *** GRID**/
 /* This grid uses floats - because they work everywhere, even in older browsers*/
 .container {
-  padding: 10rem; }
+  padding: 20rem; }
   @media (max-width: 48rem) {
     .container {
       padding: 5vw; } }
@@ -402,7 +411,7 @@ html {
   width: 90%;
   float: right;
   position: relative;
-  top: 8rem; }
+  top: 4rem; }
   @media (max-width: 75rem) {
     .order-card {
       top: 4rem;
@@ -414,6 +423,12 @@ html {
     width: 100%; }
   .order-card__price, .order-card__amount {
     margin-bottom: .8rem; }
+    @media (max-width: 1375px) {
+      .order-card__price, .order-card__amount {
+        font-size: 2rem; } }
+    @media (max-width: 75rem) {
+      .order-card__price, .order-card__amount {
+        font-size: 2.6rem; } }
   .order-card__price {
     float: left; }
   .order-card__amount {
@@ -454,6 +469,12 @@ html {
     padding: .4rem 0;
     cursor: pointer;
     transition: all .4s ease-in-out; }
+    @media (max-width: 1304px) {
+      .order-card__submit {
+        font-size: 2rem; } }
+    @media (max-width: 75rem) {
+      .order-card__submit {
+        font-size: 2.6rem; } }
     .order-card__submit:hover {
       background-color: #007229;
       box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.4);

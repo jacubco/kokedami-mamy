@@ -28,5 +28,13 @@ html {
   letter-spacing: 4px; 
   margin-bottom: 2rem;
 
-
+  @media (max-width: 1375px) {
+    font-size: 2.8rem;
+  }
+  @media (max-width: 1375px) {
+    font-size: 2.4rem;
+  }
+  @include media(medium) {
+    font-size: 3.2rem;
+  }
 }
